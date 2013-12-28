@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+  require 'text_search.rb'
   def index
   	@entries = Entry.all
   end
