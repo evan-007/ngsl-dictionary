@@ -1,0 +1,7 @@
+<% provide(:title, 'Home') %>
+<h2>Welcome to the NGSL Dictionary</h2>
+<p>Here are 5 random entries:</p>
+<% @random_entries.each do |entry| %>
+<h3><%= entry.word.capitalize %></h3>
+<p>Definition: <%= entry.definition.capitalize %>.</p>
+<% end %>
