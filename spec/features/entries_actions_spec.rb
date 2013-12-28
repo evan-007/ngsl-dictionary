@@ -27,8 +27,8 @@ describe "Entries controller actions" do
 			expect(page).to have_title('NGSL Dictionary | Index')
 		end
 	end
-
-	describe "A view page" do
+	#factory girl???
+	describe "A view page" do #this will never pass until test db matches dev db
 		it "should have the title 'NGSL Dictionary | The'" do
 			visit '/entries/1'
 			expect(page).to have_title('NGSL Dictionary | The')
